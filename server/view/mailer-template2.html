@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification Mailer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">  
+    <!-- <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            padding: 20px;
+            background-color: #f7f6f2; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .mailer-box{
+            width: 500px;
+            height: 95vh;
+            background-color: yellow;
+        }
+
+        #header{
+            height: 50px;
+            background-color: #243050;
+            color: white;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            font-size: 2rem;
+        }
+
+        #mailer-image{
+            height: 400px;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bolder;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            background-image: url('./emailer-banner.jpg');
+            background-position: center;
+            background-size: cover;
+        }
+
+        #mailer-image div{
+            padding: 40px;
+            text-align: center;
+            background-color: rgba(0,0,0,0.3);
+        }
+
+        #info-container{
+            height: 260px;
+            background-color: orange;
+            color: white;
+            display: flex; 
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+        }
+
+        #info-container p{
+            font-family: 'Open Sans';
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        #info-container button{
+            padding: 10px;
+            outline: none;
+            border: none;
+            text-transform: capitalize;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        #footer{
+            height: 120px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-family: 'Open Sans';
+            background-color: white;
+        }
+
+        #links-container{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #links-container div{
+            width: 20%;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 0.8rem;
+        }
+
+        #social-icons-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #footer p{
+            width: 100%;
+            font-size: 0.7rem;
+            text-align: center;
+            font-family: 'Open Sans';
+
+        }
+
+    </style> -->
+</head>
+<body style="padding: 20px;
+background-color: #f7f6f2; 
+display: flex; 
+justify-content: center; 
+align-items: center;">
+
+    <div class="mailer-box" 
+    style="width: 500px;
+    height: 95vh;
+    background-color: yellow;">
+        <div id="header" style="height: 50px;
+        background-color: #243050;
+        color: white;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        font-size: 2rem;">
+            <div id="logo">
+                LOGO
+            </div>
+        </div>
+        <div id="mailer-image" style="height: 400px;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bolder;
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        background-image: url('./emailer-banner.jpg');
+        background-position: center;
+        background-size: cover;">
+            <div style="padding: 40px;
+            text-align: center;
+            background-color: rgba(0,0,0,0.3);">
+                Explore <br />
+                The Ultimate Luxury
+            </div>
+        </div>
+        <div id="info-container" style="height: 260px;
+        background-color: orange;
+        color: white;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;">
+            <h3 style="font-size: 1.6rem;font-style: italic;padding: 20px 0px; margin-bottom: 40px; border-bottom: 1px solid white;">Treat yourself with luxury!</h3>
+            <p style="font-family: 'Open Sans';
+            font-size: 0.8rem;
+            font-weight: bold;">Save Up to 40% off your order! Sale starts now!
+                In store & online.</p>
+            <button style="padding: 10px;
+            outline: none;
+            border: none;
+            text-transform: capitalize;
+            border-radius: 5px;
+            margin-top: 20px;">Verify Now</button>
+
+        </div>
+        <div id="footer" style="height: 120px;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: 'Open Sans';
+        background-color: white;">
+            <div id="links-container" style="width: 100%;
+            display: flex;
+            justify-content: space-around;">
+                <div style="border-right: 1px solid black; width: 20%;
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 0.8rem;">
+                    Diamonds
+                </div>
+                <div style="border-right: 1px solid black;width: 20%;
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 0.8rem;">
+                    Gemstones
+                </div>
+                <div style="border-right: 1px solid black;width: 20%;
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 0.8rem;">
+                    Rings
+                </div>
+                <div style="border-right: 1px solid black;width: 20%;
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 0.8rem;">
+                    Pendants
+                </div>
+                <div>
+                    Studs
+                </div>
+            </div>
+            <div id="social-icons-container" style=" width: 100%;
+            display: flex;
+            justify-content: center;">
+                <i class="fab fa-facebook" style="padding: 8px;"></i>
+                <i class="fab fa-instagram" style="padding: 8px;"></i>
+                <i class="fab fa-pinterest" style="padding: 8px;"></i>
+                <i class="fab fa-twitter" style="padding: 8px;"></i>
+            </div>
+            <p style="width: 100%;
+            font-size: 0.7rem;
+            text-align: center;
+            font-family: 'Open Sans';">
+                You are receiving this email because you have visited our site or asked us about regular newsletter. 
+                Make sure our messages get to your Inbox, not your junk folders. Please add your@mail.com to your contacts!
+            </p>
+            <p style="width: 100%;
+            font-size: 0.7rem;
+            text-align: center;
+            font-family: 'Open Sans';">
+                <a href="https://google.com" style="text-decoration: none;
+                ">Privacy Terms</a> | <a href="https://google.com" style="text-decoration: none;
+">Unsubscribe</a> 
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

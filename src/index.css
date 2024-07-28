@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+body {
+  margin: 0px;
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+h1{
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+p{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+button{
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 1rem;
+  border-radius: 1px;
+  cursor: pointer;
+  background-color: rgba(30,46,76);
+  color: white;
+}
+
+button:hover{
+  background-color: rgba(30,46,76, 0.5);
+}
+
+
+
+
