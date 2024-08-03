@@ -9,7 +9,7 @@ module.exports = {
   dbPassword: process.env.DBPASSWORD || "wyS0mBm0F2XAdgvgMpH9",
   dbSchema: process.env.DBSCHEMA || "MERN-APP",
   dbPort: process.env.DBPORT || "3306",
-  port: process.env.PORT || "80",
+  port: process.env.PORT || "8000",
 
   // mongoURI:
   //   process.env.MONGODB_URI ||
